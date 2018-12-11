@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#board {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+#board td {
+  border: 1px solid #000;
+  width: 33.33333333%;
+}
+#board .btn-cell {
+  border: 0;
+  background: #fefefe;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  font-family: 'Indie Flower', cursive;
+  font-size: 70px;
+}
+#board .btn-cell.X {
+  color: #0075b5;
+}
+#board .btn-cell.O {
+  color: #FF3838;
+}
+#board .btn-cell:focus {
+  outline: none;
+}
+#game .info-box {
+  display: none;
+  width: 250px;
+  height: 90px;
+  padding-top: 10px;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: calc(50% - 35px);
+  color: #000;
+  text-align: center;
+}
+#game {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+#game .activePlayer {
+  float: right;
+}
+#game .player {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: #0075b5;
+  color: #FFF;
+  cursor: pointer;
+  margin: 5px auto;
+  padding: 10px 5px;
+}
+.login-box {
+  width: 300px;
+  padding: 0 5px;
+  margin: 20px auto;
+}
+.login-box input {
+  display: block;
+  margin: 5px auto;
+  width: calc(100% - 13px);
+  padding: 10px 5px;
+}
+.login-box .btn {
+  width: 100%;
+  padding: 10px 5px;
+}
+.login-box .error-text {
+  color: #FF3838;
+}
+.name {
+  font-weight: bold;
+}
+@media only screen and (min-width: 480px) {
+  #board .btn-cell {
+    font-size: 120px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #board .btn-cell {
+    font-size: 150px;
+  }
+}
